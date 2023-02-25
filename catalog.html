@@ -18,15 +18,15 @@
               <button class="search-form__button" type="submit">Найти</button>
             </form>
             <ul class="user-menu__list user-menu__list--catalog">
-              <li class="user-menu__item user-menu__item--catalog"><a class="user-menu__link user-menu__link--catalog" href="#">Илья Кузьмичёв</a></li>
-              <li class="user-menu__item user-menu__item--catalog"><a class="user-menu__link user-menu__link--catalog" href="#">Выйти</a></li>
-              <li class="user-menu__item user-menu__item--catalog"><a class="user-menu__link user-menu__link--catalog" href="#">Сравнить</a></li>
-              <li class="user-menu__item user-menu__item--catalog"><a class="user-menu__link user-menu__link--catalog" href="#">Корзина</a></li>
+              <li class="user-menu__item"><a class="user-menu__link" href="#">Илья Кузьмичёв</a></li>
+              <li class="user-menu__item"><a class="user-menu__link user-menu__link--logged-in" href="#">Выйти</a></li>
+              <li class="user-menu__item"><a class="user-menu__link" href="#">Сравнить</a></li>
+              <li class="user-menu__item"><a class="user-menu__link" href="#">Корзина</a></li>
             </ul>
           </div>
-          <nav class="site-navigation">
-            <ul class="site-navigation__list">
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Каталог товаров</a></li>
+          <nav class="site-navigation page-header__site-navigation">
+            <a class="site-navigation__product-catalog" href="#">Каталог товаров</a>
+            <ul class="site-navigation__list page-header__list">
               <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
               <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
               <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
@@ -166,22 +166,24 @@
     <footer class="page-footer">
       <div class="container">
         <img class="page-footer__logo" src="" alt="Логотип интернет-магазина 'Device'">
-        <div class="page-footer__info">
+        <div class="page-footer__body">
           <p class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <ul class="page-footer__list">
-            <li class="page-footer__item">Доставка</li>
-            <li class="page-footer__item">Гарантия</li>
-            <li class="page-footer__item">Контакты</li>
-          </ul>
-          <a class="page-footer__link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <nav class="site-navigation page-footer__site-navigation">
+            <ul class="site-navigation__list page-footer__list">
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <a class="pag-footer__tel tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
-        <div class="social-links">
-          <ul class="social-links__list">
-            <li class="social-links__item">FB</li>
-            <li class="social-links__item">INST</li>
-            <li class="social-links__item">TWITTER</li>
+        <div class="page-footer__footer">
+          <ul class="social-links">
+            <li class="social-links__item"><a class="social-links__link" href="https://www.facebook.com/" target="_blank">FB</a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://instagram.com/" target="_blank">INST</a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://twitter.com/" target="_blank">TWIT</a></li>
           </ul>
-          <a class="social-links__link" href="https://htmlacademy.ru/study"></a>
+          <a class="page-footer__link" href="https://htmlacademy.ru/study">HTML</a>
         </div>
       </div>
     </footer>
