@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Device: главная страница</title>
   </head>
-  <body class="page">
+  <body class="page__body">
     <h1 class="visually-hidden">Магазин электроники "Device"</h1>
     <header class="page-header">
       <div class="container">
@@ -12,23 +12,23 @@
           <a>
             <img class="page-header__logo" src="" alt='логотип интернет магазина "Device"'>
           </a>
-          <div class="page-header__user-menu">
+          <div class="user-menu">
             <form class="search-form" action="#" method="get">
               <input class="search-form__input" type="text" name="search" placeholder="Текст поиска">
               <button class="search-form__button" type="submit">Найти</button>
             </form>
-            <ul class="user-menu__list">
-              <li class="user-menu__item"><a class="user-menu__link" href="#">Войти</a></li>
-              <li class="user-menu__item"><a class="user-menu__link" href="#">Сравнить</a></li>
-              <li class="user-menu__item"><a class="user-menu__link" href="#">Корзина</a></li>
+            <ul class="user-menu__list user-menu__list--main">
+              <li class="user-menu__item"><a class="user-menu__link user-menu__link--not-logged-in" href="#">Войти</a></li>
+              <li class="user-menu__item"><a class="user-menu__link " href="#">Сравнить</a></li>
+              <li class="user-menu__item"><a class="user-menu__link " href="#">Корзина</a></li>
             </ul>
           </div>
-          <nav class="page-header__navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link" href="#">Каталог товаров</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          <nav class="site-navigation">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Каталог товаров</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -48,9 +48,9 @@
                 <div class="products-slider__card">
                   <p class="card__description">Порхает как бабочка,
                     жалит как пчела!</p>
-                  <p class="card__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                  <p class="card__text text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                   </p>
-                  <a class="card__link" href="#">Подробнее</a>
+                  <a class="card__link link" href="#">Подробнее</a>
                   <ol class="card__btn-list">
                     <li class="card__btn-item card__btn-item--active">1</li>
                     <li class="card__btn-item">2</li>
@@ -74,9 +74,9 @@
               <div class="products-slider__card">
                 <p class="card__description">Худеем
                   правильно!</p>
-                <p class="card__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                <p class="card__text text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
-                <a class="card__link" href="#">Подробнее</a>
+                <a class="card__link link" href="#">Подробнее</a>
                 <ol class="card__btn-list">
                   <li class="card__btn-item card__btn-item--active">1</li>
                   <li class="card__btn-item">2</li>
@@ -97,10 +97,10 @@
               <div class="products-slider__card">
                 <p class="card__description">Делай селфи,
                   как Бен Стиллер! </p>
-                <p class="card__text">
+                <p class="card__text text">
                   Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                 </p>
-                <a class="card__link" href="#">Подробнее</a>
+                <a class="card__link link" href="#">Подробнее</a>
                 <ol class="card__btn-list">
                   <li class="card__btn-item card__btn-item--active">1</li>
                   <li class="card__btn-item">2</li>
@@ -176,26 +176,26 @@
         <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
           <div class="services__slider">
-            <button class="services__btn services__btn--active" type="button">Доставка</button>
-            <button class="services__btn" type="button">Гарантия</button>
-            <button class="services__btn" type="button">Кредит</button>
+            <button class="services__button services__button--active" type="button">Доставка</button>
+            <button class="services__button" type="button">Гарантия</button>
+            <button class="services__button" type="button">Кредит</button>
           </div>
           <ul class="services__list">
             <li class="services__item">
-              <h3 class="services__title">Доставка</h3>
-              <p class="services__text">Мы с удовольствием доставим ваш товар прямо
+              <h3 class="services__title title">Доставка</h3>
+              <p class="services__text text">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
             <li class="services__item">
-              <h3 class="services__title">Гарантия</h3>
-              <p class="services__text">Если из-за возгорания купленного у нас товара у вас
+              <h3 class="services__title title">Гарантия</h3>
+              <p class="services__text text">Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
             </li>
             <li class="services__item">
-              <h3 class="services__title">Кредит</h3>
-              <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <h3 class="services__title title">Кредит</h3>
+              <p class="services__text text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
           </ul>
         </section>
@@ -208,29 +208,29 @@
       </div>
       <div class="additional-info">
         <section class="additional-info__about-us">
-          <h2 class="additional-info__title">О нас</h2>
-          <p class="additional-info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="additional-info__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <h2 class="additional-info__title title">О нас</h2>
+          <p class="additional-info__text text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="additional-info__text text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="additional-info__list">
             <li class="additional-info__item">Меловые линии</li>
             <li class="additional-info__item">СДИК</li>
             <li class="additional-info__item">ТоксБерри</li>
           </ul>
-          <a href="" class="additional-info__link">Подробнее о нас</a>
+          <a href="" class="additional-info__link link">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="additional-info__title">Контакты</h2>
-          <p class="additional-info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
+          <h2 class="additional-info__title title">Контакты</h2>
+          <p class="additional-info__text text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
           <b class="additional-info__name">Интернет-магазин «Девайс»</b>
-          <p class="additional-info__text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <a href="tel:+7128121212">+7 (812) 812-12-12</a></p>
+          <p class="additional-info__text text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <a href="tel:+7128121212">+7 (812) 812-12-12</a></p>
           <b class="additional-info__name">Время работы</b>
-          <p class="additional-info__text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-          <a href="№" class="additional-info__link">Напишите нам</a>
+          <p class="additional-info__text text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+          <a href="№" class="additional-info__link link">Напишите нам</a>
         </section>
       </div>
       <article class="newsletter-subscribe">
-        <b class="newsletter-subscribe__title">Подпишитесь на рассылку</b>
-        <p class="newsletter-subscribe__text">Еженедельный дайджест с обзорами новинок,
+        <b class="newsletter-subscribe__title title">Подпишитесь на рассылку</b>
+        <p class="newsletter-subscribe__text text">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="newsletter-subscribe__form" action="#" method="get">
           <input type="email" name="email" placeholder="Ваш e-mail">
@@ -243,22 +243,24 @@
     <footer class="page-footer">
       <div class="container">
         <img class="page-footer__logo" src="" alt="Логотип интернет-магазина 'Device'">
-        <div class="page-footer__info">
+        <div class="page-footer__body">
           <p class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <ul class="page-footer__list">
-            <li class="page-footer__item">Доставка</li>
-            <li class="page-footer__item">Гарантия</li>
-            <li class="page-footer__item">Контакты</li>
-          </ul>
-          <a class="page-footer__link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <nav class="site-navigation page-footer__site-navigation">
+            <ul class="site-navigation__list page-footer__list">
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <a class="pag-footer__tel tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
-        <div class="social-links">
-          <ul class="social-links__list">
-            <li class="social-links__item">FB</li>
-            <li class="social-links__item">INST</li>
-            <li class="social-links__item">TWITTER</li>
+        <div class="page-footer__footer">
+          <ul class="social-links">
+            <li class="social-links__item"><a class="social-links__link" href="https://www.facebook.com/" target="_blank">FB</a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://instagram.com/" target="_blank">INST</a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://twitter.com/" target="_blank">TWIT</a></li>
           </ul>
-          <a class="social-links__link" href="https://htmlacademy.ru/study"></a>
+          <a class="page-footer__link" href="https://htmlacademy.ru/study">HTML</a>
         </div>
       </div>
     </footer>
