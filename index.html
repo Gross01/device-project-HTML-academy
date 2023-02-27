@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Device: главная страница</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body class="page__body">
     <h1 class="visually-hidden">Магазин электроники "Device"</h1>
@@ -51,11 +52,6 @@
                   <p class="card__text text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                   </p>
                   <a class="card__link link" href="#">Подробнее</a>
-                  <ol class="card__btn-list">
-                    <li class="card__btn-item card__btn-item--active">1</li>
-                    <li class="card__btn-item">2</li>
-                    <li class="card__btn-item">3</li>
-                  </ol>
                   <dl class="card__characteristics">
                     <dt>800м</dt>
                     <dd>Дальность полета</dd>
@@ -77,11 +73,6 @@
                 <p class="card__text text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
                 <a class="card__link link" href="#">Подробнее</a>
-                <ol class="card__btn-list">
-                  <li class="card__btn-item card__btn-item--active">1</li>
-                  <li class="card__btn-item">2</li>
-                  <li class="card__btn-item">3</li>
-                </ol>
                 <dl class="card__characteristics">
                   <dt>48 часов</dt>
                   <dd>Без подзарядки</dd>
@@ -101,11 +92,6 @@
                   Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                 </p>
                 <a class="card__link link" href="#">Подробнее</a>
-                <ol class="card__btn-list">
-                  <li class="card__btn-item card__btn-item--active">1</li>
-                  <li class="card__btn-item">2</li>
-                  <li class="card__btn-item">3</li>
-                </ol>
                 <dl class="card__characteristics">
                   <dt>8,5 м</dt>
                   <dd>Длина палки</dd>
@@ -119,6 +105,11 @@
               </div>
               </li>
             </ol>
+            <div class="products-slider__buttons">
+              <button class="product-slider__button product-slider__button--active"></button>
+              <button class="product-slider__button"></button>
+              <button class="product-slider__button"></button>
+            </div>
         </section>
         <section class="product-sections">
           <h2  class="visually-hidden">Разделы товаров</h2>
@@ -260,7 +251,7 @@
             <li class="social-links__item"><a class="social-links__link" href="https://instagram.com/" target="_blank">INST</a></li>
             <li class="social-links__item"><a class="social-links__link" href="https://twitter.com/" target="_blank">TWIT</a></li>
           </ul>
-          <a class="page-footer__link" href="https://htmlacademy.ru/study">
+          <a class="page-footer__link" href="https://htmlacademy.ru/study" target="_blank">
             <img class="page-footer__img" src="img/social-icons/html.svg" alt="Логотип компании HTML academy" width="115" height="33">
           </a>
         </div>
