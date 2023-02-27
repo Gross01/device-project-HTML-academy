@@ -24,9 +24,9 @@
               <li class="user-menu__item"><a class="user-menu__link " href="#">Корзина</a></li>
             </ul>
           </div>
-          <nav class="site-navigation">
-            <ul class="site-navigation__list">
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Каталог товаров</a></li>
+          <nav class="site-navigation page-header__site-navigation">
+            <a class="site-navigation__product-catalog" href="#">Каталог товаров</a>
+            <ul class="site-navigation__list page-header__list">
               <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
               <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
               <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
@@ -53,11 +53,11 @@
                   </p>
                   <a class="card__link link" href="#">Подробнее</a>
                   <dl class="card__characteristics">
-                    <dt>800м</dt>
-                    <dd>Дальность полета</dd>
+                    <dt class="card__characteristic-title">800м</dt>
+                    <dd class="card__characteristic-text">Дальность полета</dd>
 
-                    <dt>50м</dt>
-                    <dd>Радиус поражения</dd>
+                    <dt class="card__characteristic-title">50м</dt>
+                    <dd class="card__characteristic-text">Радиус поражения</dd>
                   </dl>
                 </div>
               </li>
@@ -74,8 +74,8 @@
                 </p>
                 <a class="card__link link" href="#">Подробнее</a>
                 <dl class="card__characteristics">
-                  <dt>48 часов</dt>
-                  <dd>Без подзарядки</dd>
+                  <dt class="card__characteristic-title">48 часов</dt>
+                  <dd class="card__characteristic-text">Без подзарядки</dd>
                 </dl>
               </div>
               </li>
@@ -93,14 +93,14 @@
                 </p>
                 <a class="card__link link" href="#">Подробнее</a>
                 <dl class="card__characteristics">
-                  <dt>8,5 м</dt>
-                  <dd>Длина палки</dd>
+                  <dt class="card__characteristic-title">8,5 м</dt>
+                  <dd class="card__characteristic-text">Длина палки</dd>
 
-                  <dt>5 кг</dt>
-                  <dd>Вес палки</dd>
+                  <dt class="card__characteristic-title">5 кг</dt>
+                  <dd class="card__characteristic-text">Вес палки</dd>
 
-                  <dt>Карбон</dt>
-                  <dd>Материал</dd>
+                  <dt class="card__characteristic-title">Карбон</dt>
+                  <dd class="card__characteristic-text">Материал</dd>
                 </dl>
               </div>
               </li>
@@ -116,7 +116,7 @@
           <ul class="product-sections__list">
             <li class="product-sections__item">
               <a class="product-sections__link" href="#">
-                <div class="image-wrapper">
+                <div class="product-sections__image-wrapper">
                   <img class="product-sections__image" src="img/icons/glasses.svg" width="97" height="55" alt="Очки виртуальной реальности"></img>
                 </div>
                 <b class="product-sections__text">Виртуальная реальность</b>
@@ -124,7 +124,7 @@
             </li>
             <li class="product-sections__item">
               <a class="product-sections__link" href="catalog.html">
-                <div class="image-wrapper">
+                <div class="product-sections__image-wrapper">
                   <img class="product-sections__image" src="img/icons/monopodes.svg" width="86" height="117" alt="Монопод для селфи"></img>
                 </div>
                 <b class="product-sections__text">Моноподы для селфи</b>
@@ -132,7 +132,7 @@
             </li>
             <li class="product-sections__item">
               <a class="product-sections__link" href="#">
-                <div class="image-wrapper">
+                <div class="product-sections__image-wrapper">
                   <img class="product-sections__image" src="img/icons/cam.svg" width="71" height="87" alt="Экшн-камера"></img>
                 </div>
                 <b class="product-sections__text">Экшн-камеры</b>
@@ -140,7 +140,7 @@
             </li>
             <li class="product-sections__item">
               <a class="product-sections__link" href="#">
-                <div class="image-wrapper">
+                <div class="product-sections__image-wrapper">
                   <img class="product-sections__image" src="img/icons/bracelet.svg" width="107" height="65" alt="Фитнесс-браслет"></img>
                 </div>
                 <b class="product-sections__text">Фитнес-браслеты</b>
@@ -148,7 +148,7 @@
             </li>
             <li class="product-sections__item">
               <a class="product-sections__link" href="#">
-                <div class="image-wrapper">
+                <div class="product-sections__image-wrapper">
                   <img class="product-sections__image" src="img/icons/watch.svg" width="56" height="98" alt="Умные часы"></img>
                 </div>
                 <b class="product-sections__text">Умные часы</b>
@@ -156,7 +156,7 @@
             </li>
             <li class="product-sections__item">
               <a class="product-sections__link" href="#">
-                <div class="image-wrapper">
+                <div class="product-sections__image-wrapper">
                   <img class="product-sections__image" src="img/icons/quadcopter.svg" width="132" height="70" alt="Квадрокоптер"></img>
                 </div>
                 <b class="product-sections__text">Квадрокоптеры</b>
@@ -167,9 +167,9 @@
         <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
           <div class="services__slider">
-            <button class="services__button services__button--active" type="button">Доставка</button>
-            <button class="services__button" type="button">Гарантия</button>
-            <button class="services__button" type="button">Кредит</button>
+            <button class="services__button services__button--active button" type="button">Доставка</button>
+            <button class="services__button button" type="button">Гарантия</button>
+            <button class="services__button button" type="button">Кредит</button>
           </div>
           <ul class="services__list">
             <li class="services__item">
@@ -213,22 +213,23 @@
           <h2 class="additional-info__title title">Контакты</h2>
           <p class="additional-info__text text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
           <b class="additional-info__name">Интернет-магазин «Девайс»</b>
-          <p class="additional-info__text text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <a href="tel:+7128121212">+7 (812) 812-12-12</a></p>
+          <p class="additional-info__text text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <a class="tel" href="tel:+7128121212">+7 (812) 812-12-12</a></p>
           <b class="additional-info__name">Время работы</b>
           <p class="additional-info__text text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
           <a href="№" class="additional-info__link link">Напишите нам</a>
         </section>
       </div>
       <article class="newsletter-subscribe">
-        <b class="newsletter-subscribe__title title">Подпишитесь на рассылку</b>
-        <p class="newsletter-subscribe__text text">Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="newsletter-subscribe__form" action="#" method="get">
-          <input type="email" name="email" placeholder="Ваш e-mail">
-          <button class="newsletter-subscribe__btn">Подписаться</button>
-          <span class="">Это бесплатно</span>
-        </form>
-        <span class="newsletter-subscribe__span">Это бесплатно</span>
+        <div class="container">
+          <b class="newsletter-subscribe__title title">Подпишитесь на рассылку</b>
+          <p class="newsletter-subscribe__text text">Еженедельный дайджест с обзорами новинок,
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <form class="newsletter-subscribe__form" action="#" method="get">
+            <input type="email" name="email" placeholder="Ваш e-mail">
+            <button class="newsletter-subscribe__btn">Подписаться</button>
+          </form>
+          <span class="newsletter-subscribe__span text">Это бесплатно</span>
+        </div>
       </article>
     </main>
     <footer class="page-footer">
@@ -243,13 +244,13 @@
               <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <a class="pag-footer__tel tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="page-footer__tel tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
         <div class="page-footer__footer">
           <ul class="social-links">
-            <li class="social-links__item"><a class="social-links__link" href="https://www.facebook.com/" target="_blank">FB</a></li>
-            <li class="social-links__item"><a class="social-links__link" href="https://instagram.com/" target="_blank">INST</a></li>
-            <li class="social-links__item"><a class="social-links__link" href="https://twitter.com/" target="_blank">TWIT</a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://www.facebook.com/" target="_blank"><span class="visually-hidden">Facecbook<span></a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://instagram.com/" target="_blank"><span class="visually-hidden">Instagram<span></a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://twitter.com/" target="_blank"><span class="visually-hidden">Twitter<span></a></li>
           </ul>
           <a class="page-footer__link" href="https://htmlacademy.ru/study" target="_blank">
             <img class="page-footer__img" src="img/social-icons/html.svg" alt="Логотип компании HTML academy" width="115" height="33">
