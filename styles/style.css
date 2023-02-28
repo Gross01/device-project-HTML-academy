@@ -199,7 +199,7 @@ fieldset {
   align-items: center;
 }
 
-.product-sections__text {
+.product-sections__title {
   font-family: var(--font-fam-title);
   font-weight: 800;
   font-size: inherit;
@@ -321,7 +321,7 @@ fieldset {
   color: var(--color-main);
 }
 
-.products-filter__main-title, .sorting__title {
+.products-filter__main-title, .catalog__title {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
   font-size: 16px;
@@ -384,17 +384,21 @@ fieldset {
   text-transform: uppercase;
 }
 
-.page-selector {
+.catalog__footer {
   background-color: #EBEBEB;
 }
 
-.page-selector__pre-link, .page-selector__post-link {
+.catalog__pre-link, .catalog__post-link {
+  font-size: 18px;
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
   line-height: 21px;
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--color-main);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .page-selector__link {
