@@ -230,7 +230,7 @@ fieldset {
   align-items: center;
 }
 
-.additional-info__item {
+.site-info__item {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-bold);
   font-size: 18px;
@@ -238,7 +238,7 @@ fieldset {
   color: var(--color-main);
 }
 
-.additional-info__name {
+.contacts__name {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-bold);
   font-style: 24px;
