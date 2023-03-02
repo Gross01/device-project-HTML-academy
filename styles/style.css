@@ -83,7 +83,7 @@ fieldset {
   background-image: linear-gradient(180deg, #fff 22px, #ffe17f 1px);
 }
 
-.title, .card__description {
+.title, .products-slider__description {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
   font-size: 50px;
@@ -159,7 +159,7 @@ fieldset {
   display: block;
 }
 
-.card__characteristic-title {
+.products-slider__info-title {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-normal);
   font-size: 36px;
@@ -167,7 +167,7 @@ fieldset {
   color: var(--color-main);
 }
 
-.card__characteristic-title {
+.cproducts-slider__info-title {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-normal);
   font-style: 16px;
