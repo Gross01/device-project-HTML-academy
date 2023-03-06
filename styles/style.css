@@ -216,7 +216,7 @@ fieldset {
   color: #fff;
 }
 
-.main-content {
+.main-content-index {
   background-image: linear-gradient(180deg, #ffe17f 137px, #fff 1px );
 }
 
@@ -227,6 +227,15 @@ fieldset {
 .products-slider__item--active {
   display: flex;
   justify-content: space-between;
+}
+
+.main-goods__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-goods__item {
+  width: 160px;
 }
 
 .products-slider__info-title {
