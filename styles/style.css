@@ -182,6 +182,28 @@ fieldset {
   display: block;
 }
 
+.delivery-info {
+  display: flex;
+  align-items: center;
+}
+
+.delivery-info__text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.additional-info {
+  display: flex;
+}
+
+.site-info {
+  width: 520px;
+}
+
+.contacts {
+  width: 532px;
+}
+
 .title, .products-slider__description {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
