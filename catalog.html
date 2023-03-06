@@ -8,44 +8,44 @@
   <body class="page__body">
     <h1 class="visually-hidden">Каталог моноподов для селфи</h1>
     <header class="page-header">
-      <div class="container">
-        <div class="page-header__wrapper">
-          <a href="index.html">
-            <img class="page-header__logo" src="img/logo/header-logo.svg" alt='логотип интернет магазина "Device"' width="145" height="36">
-          </a>
-          <div class="user-menu">
-            <form class="search-form" action="#" method="get">
-              <input class="search-form__input" type="text" name="search" placeholder="Текст поиска">
-              <button class="search-form__button" type="submit">Найти</button>
-            </form>
-            <ul class="user-menu__list user-menu__list--catalog">
-              <li class="user-menu__item"><a class="user-menu__link" href="#">Илья Кузьмичёв</a></li>
-              <li class="user-menu__item"><a class="user-menu__link user-menu__link--logged-in" href="#">Выйти</a></li>
-              <li class="user-menu__item"><a class="user-menu__link" href="#">Сравнить</a></li>
-              <li class="user-menu__item"><a class="user-menu__link" href="#">Корзина</a></li>
-            </ul>
-          </div>
-          <nav class="site-navigation page-header__site-navigation">
-            <a class="site-navigation__product-catalog" href="#">Каталог товаров</a>
-            <ul class="site-navigation__list page-header__list">
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
-              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
-            </ul>
-          </nav>
+      <div class="page-header__container">
+        <a href="index.html">
+          <img class="page-header__logo" src="img/logo/header-logo.svg" alt='логотип интернет магазина "Device"' width="145" height="36">
+        </a>
+        <div class="user-menu">
+          <form class="search-form" action="#" method="get">
+            <input class="search-form__input" type="text" name="search" placeholder="Текст поиска">
+            <button class="search-form__button" type="submit">Найти</button>
+          </form>
+          <ul class="user-menu__list user-menu__list--catalog">
+            <li class="user-menu__item"><a class="user-menu__link" href="#">Илья Кузьмичёв</a></li>
+            <li class="user-menu__item"><a class="user-menu__link user-menu__link--logged-in" href="#">Выйти</a></li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#">Сравнить</a></li>
+            <li class="user-menu__item"><a class="user-menu__link" href="#">Корзина</a></li>
+          </ul>
         </div>
+        <nav class="site-navigation page-header__site-navigation">
+          <a class="site-navigation__product-catalog" href="#">Каталог товаров</a>
+          <ul class="site-navigation__list page-header__list">
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main-content main-content-catalog">
-      <div class="container">
+      <div class="main-content__container">
         <section class="products-catalog">
           <div class="products-catalog__header">
             <h2 class="products-catalog__title title">Моноподы для селфи</h2>
-            <ol class="products-catalog__list">
-              <li class="products-catalog__item">Главная</li>
-              <li class="products-catalog__item">Каталог товаров</li>
-              <li class="products-catalog__item">Моноподы для селфи</li>
-            </ol>
+            <nav class="products-catalog__navigation">
+              <ol class="products-catalog__list">
+                <li class="products-catalog__item">Главная</li>
+                <li class="products-catalog__item">Каталог товаров</li>
+                <li class="products-catalog__item">Моноподы для селфи</li>
+              </ol>
+            </nav>
           </div>
           <div class="products-catalog__body">
             <div class="products-filter">
@@ -92,62 +92,62 @@
               </form>
             </div>
             <div class="catalog">
-              <div class="sorting">
-                <h3 class="sorting__title">Сортировка:</h3>
-                <select class="sorting__select" name="category">
-                  <option class="sorting__select-item" value="popular" selected>Популярные</option>
-                  <option class="sorting__select-item" value="new">Новые</option>
+              <header class="catalog__header">
+                <h3 class="catalog__title">Сортировка:</h3>
+                <select class="catalog__select" name="category">
+                  <option class="catalog__select-item" value="popular" selected>Популярные</option>
+                  <option class="catalog__select-item" value="new">Новые</option>
                 </select>
-                <div class="sorting__wrapper">
-                  <a class="sorting__link" href="#">
+                <div class="catalog__wrapper">
+                  <a class="catalog__sorting-link" href="#">
                     <span class="visually-hidden">Сортировать по возрастанию</span>
                   </a>
-                  <a class="sorting__link" href="#">
-                    <span class="visually-hidden">Сортировать по возрастанию</span>
+                  <a class="catalog__sorting-link" href="#">
+                    <span class="visually-hidden">Сортировать по убыванию</span>
                   </a>
                 </div>
-              </div>
+              </header>
               <div class="catalog__body">
-                <ol class="catalog__list">
+                <ul class="catalog__list">
                   <li class="catalog__item">
                     <a class="catalog__link" href="#">
                       <img class="catalog__image" src="img/products/product-1.png" alt="Любительская селфи-палка" width="360" height="380">
-                      <p class="catalog__product-name">Любительская селфи-палка</p>
-                      <b class="catalog__price">500 ₽</b>
+                      <h4 class="catalog__product-name">Любительская селфи-палка</h4>
+                      <span class="catalog__price">500 ₽</span>
                     </a>
                   </li>
                   <li class="catalog__item">
                     <a class="catalog__link" href="#">
                       <img class="catalog__image" src="img/products/product-2.png" alt="Профессиональная селфи-палка" width="360" height="380">
-                      <p class="catalog__product-name">Профессиональная селфи-палка </p>
-                      <b class="catalog__price">1 500 ₽</b>
+                      <h4 class="catalog__product-name">Профессиональная селфи-палка </h4>
+                      <span class="catalog__price">1 500 ₽</span>
                     </a>
                   </li><li class="catalog__item">
                     <a class="catalog__link" href="#">
                       <img class="catalog__image" src="img/products/product-3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
-                      <p class="catalog__product-name">Непотопляемая селфи-палка</p>
-                      <b class="catalog__price">2 500 ₽</b>
+                      <h4 class="catalog__product-name">Непотопляемая селфи-палка</h4>
+                      <span class="catalog__price">2 500 ₽</span>
                     </a>
                   </li><li class="catalog__item">
                     <a class="catalog__link" href="#">
                       <img class="catalog__image" src="img/products/product-4.png" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-                      <p class="catalog__product-name">Селфи-палка «Следуй за мной»</p>
-                      <b class="catalog__price">1 500 ₽</b>
+                      <h4 class="catalog__product-name">Селфи-палка «Следуй за мной»</h4>
+                      <span class="catalog__price">1 500 ₽</span>
                     </a>
                   </li>
-                </ol>
+                </ul>
                 <button class="catalog__button" type="button">Загрузить еще</button>
-                <div class="page-selector">
-                  <a  class="page-selector__pre-link" href="#">Назад</a>
-                  <ol class="page-selector__list">
+                <footer class="catalog__footer">
+                  <button class="catalog__pre-link" type="button">Назад</button>
+                  <ol class="page-selector">
                     <li class="page-selector__item"><a class="page-selector__link" href="#">1</a></li>
                     <li class="page-selector__item"><a class="page-selector__link" href="#">2</a></li>
                     <li class="page-selector__item"><a class="page-selector__link" href="#">3</a></li>
                     <li class="page-selector__item"><a class="page-selector__link" href="#">...</a></li>
                     <li class="page-selector__item"><a class="page-selector__link" href="#">15</a></li>
                   </ol>
-                  <a  class="page-selector__post-link" href="#">Вперёд</a>
-                </div>
+                  <button  class="catalog__post-link" type="button">Вперёд</button>
+                </footer>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__container">
         <img class="page-footer__logo" src="img/logo/footer-logo.svg" alt="Логотип интернет-магазина 'Device'" width="145" height="36">
         <div class="page-footer__body">
           <p class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -170,7 +170,7 @@
         </div>
         <div class="page-footer__footer">
           <ul class="social-links">
-            <li class="social-links__item"><a class="social-links__link" href="https://www.facebook.com/" target="_blank"><span class="visually-hidden">Facecbook<span></a></li>
+            <li class="social-links__item"><a class="social-links__link" href="https://www.facebook.com/" target="_blank"><span class="visually-hidden">Facebook<span></a></li>
             <li class="social-links__item"><a class="social-links__link" href="https://instagram.com/" target="_blank"><span class="visually-hidden">Instagram<span></a></li>
             <li class="social-links__item"><a class="social-links__link" href="https://twitter.com/" target="_blank"><span class="visually-hidden">Twitter<span></a></li>
           </ul>

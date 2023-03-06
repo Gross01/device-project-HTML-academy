@@ -83,7 +83,7 @@ fieldset {
   background-image: linear-gradient(180deg, #fff 22px, #ffe17f 1px);
 }
 
-.title, .card__description {
+.title, .products-slider__description {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
   font-size: 50px;
@@ -159,7 +159,7 @@ fieldset {
   display: block;
 }
 
-.card__characteristic-title {
+.products-slider__info-title {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-normal);
   font-size: 36px;
@@ -167,7 +167,7 @@ fieldset {
   color: var(--color-main);
 }
 
-.card__characteristic-title {
+.cproducts-slider__info-title {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-normal);
   font-style: 16px;
@@ -190,7 +190,7 @@ fieldset {
 }
 
 
-.product-sections__image-wrapper {
+.main-goods__image-wrapper {
   width: 160px;
   height: 160px;
   background-color: #ffe17f;
@@ -199,7 +199,7 @@ fieldset {
   align-items: center;
 }
 
-.product-sections__text {
+.main-goods__title {
   font-family: var(--font-fam-title);
   font-weight: 800;
   font-size: inherit;
@@ -230,7 +230,7 @@ fieldset {
   align-items: center;
 }
 
-.additional-info__item {
+.site-info__item {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-bold);
   font-size: 18px;
@@ -238,7 +238,7 @@ fieldset {
   color: var(--color-main);
 }
 
-.additional-info__name {
+.contacts__name {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-bold);
   font-style: 24px;
@@ -321,7 +321,7 @@ fieldset {
   color: var(--color-main);
 }
 
-.products-filter__main-title, .sorting__title {
+.products-filter__main-title, .catalog__title {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
   font-size: 16px;
@@ -384,17 +384,21 @@ fieldset {
   text-transform: uppercase;
 }
 
-.page-selector {
+.catalog__footer {
   background-color: #EBEBEB;
 }
 
-.page-selector__pre-link, .page-selector__post-link {
+.catalog__pre-link, .catalog__post-link {
+  font-size: 18px;
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
   line-height: 21px;
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--color-main);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .page-selector__link {
