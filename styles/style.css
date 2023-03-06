@@ -140,7 +140,18 @@ fieldset {
   display: flex;
 }
 
+.main-content__container {
+  width: 1160px;
+  margin: 0 auto;
+}
 
+.products-slider__gallery {
+  width: 560px;
+}
+
+.products-slider__card {
+  width: 560px;
+}
 
 .title, .products-slider__description {
   font-family: var(--font-fam-title);
@@ -205,8 +216,7 @@ fieldset {
   color: #fff;
 }
 
-.products-slider {
-  margin-top: -19px;
+.main-content {
   background-image: linear-gradient(180deg, #ffe17f 137px, #fff 1px );
 }
 
@@ -215,7 +225,8 @@ fieldset {
 }
 
 .products-slider__item--active {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .products-slider__info-title {
