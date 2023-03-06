@@ -247,6 +247,10 @@ fieldset {
   margin: 0 auto;
 }
 
+.page-footer__img {
+  width: 115px;
+}
+
 .title, .products-slider__description {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
