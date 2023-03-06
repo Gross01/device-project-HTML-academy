@@ -64,6 +64,8 @@ a {
 
 fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -97,16 +99,13 @@ fieldset {
   flex-grow: 1;
 }
 
-.page-header {
-  background-image: linear-gradient(180deg, #fff 22px, #ffe17f 1px);
-}
-
 .page-header__container {
   width: 1160px;
   margin: 0 auto;
   padding: 0 61px;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(180deg, #fff 22px, #ffe17f 1px);
 }
 
 .page-header__logo {
@@ -148,6 +147,11 @@ fieldset {
 .main-content__container {
   width: 1160px;
   margin: 0 auto;
+}
+
+.products-slider {
+  background-image: linear-gradient(180deg, #ffe17f 137px, #fff 1px );
+  margin-top: -18px;
 }
 
 .products-slider__gallery {
@@ -251,6 +255,62 @@ fieldset {
   width: 115px;
 }
 
+.products-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-catalog__header {
+  /* padding: 0 21px 0 60px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.products-catalog__header-container {
+  width: 1160px;
+  padding: 0 21px 0 60px;
+  margin: 0 auto;
+}
+
+.products-catalog__list {
+  display: flex;
+  width: 429px;
+  padding: 0;
+}
+
+.products-catalog__body {
+  display: flex;
+}
+
+.products-filter {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding:  0 40px 0 60px;
+}
+
+.products-filter__color {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-filter__bluetooth {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog {
+  flex-grow: 1;
+}
+
+.catalog__header {
+  width: 100%;
+}
+
+.catalog__body {
+  width: 100%;
+}
+
 .title, .products-slider__description {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
@@ -315,10 +375,6 @@ fieldset {
   color: #fff;
 }
 
-.main-content-index {
-  background-image: linear-gradient(180deg, #ffe17f 137px, #fff 1px );
-}
-
 .products-slider__item {
   display: none;
 }
@@ -366,7 +422,6 @@ fieldset {
 .product-slider__button--active {
   background-color: var(--color-main);
 }
-
 
 .main-goods__image-wrapper {
   width: 160px;
