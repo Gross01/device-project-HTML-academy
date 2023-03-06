@@ -261,9 +261,15 @@ fieldset {
 }
 
 .products-catalog__header {
-  padding: 0 21px 0 60px;
+  /* padding: 0 21px 0 60px; */
   display: flex;
   flex-direction: column;
+}
+
+.products-catalog__header-container {
+  width: 1160px;
+  padding: 0 21px 0 60px;
+  margin: 0 auto;
 }
 
 .products-catalog__list {
@@ -293,7 +299,17 @@ fieldset {
   flex-direction: column;
 }
 
+.catalog {
+  flex-grow: 1;
+}
 
+.catalog__header {
+  width: 100%;
+}
+
+.catalog__body {
+  width: 100%;
+}
 
 .title, .products-slider__description {
   font-family: var(--font-fam-title);
