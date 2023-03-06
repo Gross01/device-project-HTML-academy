@@ -204,6 +204,49 @@ fieldset {
   width: 532px;
 }
 
+.page-footer__container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 145px;
+  margin-right: auto;
+}
+
+.page-footer__body {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__adress {
+  width: 240px;
+  margin-right: 112px;
+}
+
+.page-footer__list {
+  display: flex;
+  width: 592px;
+  flex-direction: wrap;
+}
+
+.page-footer__tel {
+  margin-left: auto;
+}
+
+.page-footer__footer {
+  display: flex;
+  align-items: center;
+}
+
+.social-links {
+  width: 200px;
+  margin: 0 auto;
+}
+
 .title, .products-slider__description {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
