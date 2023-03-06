@@ -48,6 +48,11 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 ul li, ol li {
   list-style: none;
   text-decoration: none;
@@ -153,6 +158,30 @@ fieldset {
   width: 560px;
 }
 
+.services {
+  display: flex;
+  align-items: center;
+}
+
+.services__slider {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.services__button {
+  width: 153px;
+}
+
+.services__item {
+  width: 691px;
+  display: none;
+}
+
+.services__item--active {
+  display: block;
+}
+
 .title, .products-slider__description {
   font-family: var(--font-fam-title);
   font-weight: var(--fw-super-bold);
@@ -193,6 +222,7 @@ fieldset {
   height: 8px;
   background-color: #ffe17f;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
 }
 
