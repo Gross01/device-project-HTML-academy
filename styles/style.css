@@ -112,36 +112,111 @@ fieldset {
   display: block;
   margin-right: auto;
   width: 145px;
+  margin-bottom: 30px;
 }
 
 .user-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-menu__link, .site-login__link {
+  font-family: inherit;
+  font-weight: inherit;
+  color: var(--color-main);
+}
+
+.user-menu__item:nth-child(1) {
+  padding-left: 23px;
+}
+
+.user-menu__item:not(:first-child) {
+  margin-left: 62px;
+}
+
+.site-login__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-login__link:nth-child(1) {
+  padding-left: 28px;
+}
+
+.logout {
+  opacity: .3;
 }
 
 .search-form {
   width: 517px;
+  display: flex;
+  margin-right: 26px;
+}
+
+.search-form__input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 2px solid var(--color-main);
+  border-radius: 50px 0px 0px 50px;
+  padding: 10px 0 10px 48px;
+  margin: 0;
+}
+
+.search-form__input:focus {
+  outline: none;
+}
+
+.search-form__input::placeholder {
+  color: var(--color-main);
+  font-family: var(--font-fam-main);
+  font-weight: var(--fw-normal);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.search-form__button {
+  width: 158px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--color-main);
+  border-left: none;
+  border-radius: 0px 50px 50px 0px;
+  margin: 0;
+  font-family: var(--font-fam-main);
+  font-weight: var(--fw-normal);
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .user-menu__list {
-  width: 497px;
   display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .page-header__site-navigation {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .site-navigation__product-catalog {
   width: 293px;
+  margin-right: auto;
 }
 
 .page-header__list {
   width: 592px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.page-header__list .site-navigation__item {
+  margin-left: 45px;
 }
 
 .main-content__container {
@@ -261,7 +336,6 @@ fieldset {
 }
 
 .products-catalog__header {
-  /* padding: 0 21px 0 60px; */
   display: flex;
   flex-direction: column;
 }
@@ -353,12 +427,6 @@ fieldset {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-}
-
-.user-menu__list .user-menu__link {
-  font-family: inherit;
-  font-weight: inherit;
-  color: var(--color-main);
 }
 
 .site-navigation__product-catalog, .site-navigation__list .site-navigation__link {
