@@ -118,7 +118,7 @@ fieldset {
 .user-menu {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 
 .user-menu__link, .site-login__link {
@@ -200,7 +200,6 @@ fieldset {
 .page-header__site-navigation {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 40px;
 }
 
 .site-navigation__product-catalog {
@@ -245,6 +244,7 @@ fieldset {
 .products-slider {
   margin-top: -18px;
   position: relative;
+  margin-bottom: 70px;
 }
 
 .products-slider__gallery {
@@ -264,18 +264,18 @@ fieldset {
 .products-slider__description {
   padding: 0;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 29px;
 }
 
 .products-slider__text {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 51px;
 }
 
 .products-slider__link {
   align-self: flex-start;
   padding: 16px 40px 14px 40px;
-  margin-bottom: 35px;
+  margin-bottom: 49px;
 }
 
 .products-slider__info {
@@ -296,7 +296,7 @@ fieldset {
 .products-slider__buttons {
   position: absolute;
   right: 0;
-  bottom: 161px;
+  bottom: 186px;
 }
 
 .product-slider__button {
