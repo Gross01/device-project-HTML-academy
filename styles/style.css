@@ -224,17 +224,98 @@ fieldset {
   margin: 0 auto;
 }
 
+.main-content__container-index {
+   background-image: linear-gradient(180deg, #ffe17f 137px, #fff 1px );
+}
+
+.products-slider__list {
+  padding: 0;
+}
+
+.products-slider__item {
+  display: none;
+}
+
+.products-slider__item--active {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .products-slider {
-  background-image: linear-gradient(180deg, #ffe17f 137px, #fff 1px );
   margin-top: -18px;
 }
 
 .products-slider__gallery {
   width: 560px;
+  margin-top: -12px;
 }
 
 .products-slider__card {
+  position: relative;
   width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.bracelet-card {
+  justify-content: flex-start;
+  margin-top: 110px;
+}
+
+.products-slider__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.products-slider__text {
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.products-slider__link {
+  align-self: flex-start;
+  padding: 16px 40px 14px 40px;
+  margin-bottom: 35px;
+}
+
+.products-slider__info {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.products-slider__info-wrapper:not(:last-child) {
+  margin-right: 20px;
+}
+
+.products-slider__info-text {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.products-slider__buttons {
+  position: absolute;
+  right: 0;
+}
+
+.quadrocopter-buttons {
+  top: 325px;
+}
+
+.bracelet-buttons {
+  top: 252px;
+}
+
+.selfie-buttons {
+  top: 325px;
+}
+
+.product-slider__button {
+  margin-left: 20px;
 }
 
 .services {
@@ -441,15 +522,6 @@ fieldset {
 
 .page-footer__list .site-navigation__link {
   color: #fff;
-}
-
-.products-slider__item {
-  display: none;
-}
-
-.products-slider__item--active {
-  display: flex;
-  justify-content: space-between;
 }
 
 .main-goods__list {
