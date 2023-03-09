@@ -244,6 +244,7 @@ fieldset {
 
 .products-slider {
   margin-top: -18px;
+  position: relative;
 }
 
 .products-slider__gallery {
@@ -258,11 +259,6 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   margin-top: 70px;
-}
-
-.bracelet-card {
-  justify-content: flex-start;
-  margin-top: 110px;
 }
 
 .products-slider__description {
@@ -300,18 +296,7 @@ fieldset {
 .products-slider__buttons {
   position: absolute;
   right: 0;
-}
-
-.quadrocopter-buttons {
-  top: 325px;
-}
-
-.bracelet-buttons {
-  top: 252px;
-}
-
-.selfie-buttons {
-  top: 325px;
+  bottom: 161px;
 }
 
 .product-slider__button {
