@@ -56,39 +56,33 @@
               <h3 class="products-filter__main-title">Фильтр:</h3>
               <form class="products-filter__search-form" action="#" method="get">
                 <fieldset class="products-filter__price">
-                  <legend class="products-filter__title">Стоимость</legend>
+                  <legend class="products-filter__title price-title">Стоимость</legend>
                   <!--Тут будет шкала цены-->
-                  <label>
-                    <span>от</span><input class="products-filter__input" type="number" name="price" value="0">
-                  </label>
-                  <label>
-                    <span>до</span><input class="products-filter__input" type="number" name="price" value="5000">
-                  </label>
                 </fieldset>
                 <fieldset class="products-filter__color">
-                  <legend class="products-filter__title">Цвет</legend>
-                  <label>
+                  <legend class="products-filter__title color-title">Цвет</legend>
+                  <label class="products-filter__label">
                   <input class="products-filter__checkbox" type="checkbox" value="black" checked> <span class="products-filter__checkbox-text">Черный</span>
                   </label>
-                  <label>
+                  <label class="products-filter__label">
                     <input class="products-filter__checkbox" type="checkbox" value="white" checked> <span class="products-filter__checkbox-text">Белый</span>
                   </label>
-                  <label>
+                  <label class="products-filter__label">
                     <input class="products-filter__checkbox" type="checkbox" value="blue"> <span class="products-filter__checkbox-text">Синий</span>
                   </label>
-                  <label>
+                  <label class="products-filter__label">
                     <input class="products-filter__checkbox" type="checkbox" value="red"> <span class="products-filter__checkbox-text">Красный</span>
                   </label>
-                  <label>
+                  <label class="products-filter__label">
                     <input class="products-filter__checkbox" type="checkbox" value="pink"> <span class="products-filter__checkbox-text">Розовый</span>
                   </label>
                 </fieldset>
                 <fieldset class="products-filter__bluetooth">
-                  <legend class="products-filter__title">Bluetooth</legend>
-                  <label>
+                  <legend class="products-filter__title bluetooth-title">Bluetooth</legend>
+                  <label class="products-filter__bluetooth-label">
                     <input class="products-filter__radio" type="radio" value="have"> <span class="products-filter__radio-text">Есть</span>
                   </label>
-                  <label>
+                  <label class="products-filter__bluetooth-label">
                     <input class="products-filter__radio" type="radio" value="haven't"> <span class="products-filter__radio-text">Нет</span>
                   </label>
                 </fieldset>
@@ -141,7 +135,7 @@
                   </li>
                 </ul>
                 <button class="catalog__button" type="button">Загрузить еще</button>
-                <footer class="catalog__footer">
+                <div class="catalog__footer">
                   <button class="catalog__pre-link" type="button">Назад</button>
                   <ol class="page-selector">
                     <li class="page-selector__item"><a class="page-selector__link" href="#">1</a></li>
@@ -151,7 +145,7 @@
                     <li class="page-selector__item"><a class="page-selector__link" href="#">15</a></li>
                   </ol>
                   <button  class="catalog__post-link" type="button">Вперёд</button>
-                </footer>
+                </div>
               </div>
             </div>
           </div>
