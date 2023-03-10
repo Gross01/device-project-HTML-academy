@@ -587,14 +587,23 @@ fieldset {
 
 .products-catalog__header-container {
   width: 1160px;
-  padding: 0 21px 0 60px;
+  padding: 35px 21px 35px 60px;
   margin: 0 auto;
 }
 
+.products-catalog__title {
+  margin-bottom: 16px;
+}
+
 .products-catalog__list {
+  margin: 0;
   display: flex;
-  width: 429px;
+  flex-wrap: wrap;
   padding: 0;
+}
+
+.products-catalog__item {
+  margin-right: 36px;
 }
 
 .products-catalog__body {
@@ -605,17 +614,27 @@ fieldset {
   display: flex;
   flex-direction: column;
   width: 320px;
-  padding:  0 40px 0 60px;
+  padding:  25px 40px 0 60px;
 }
 
 .products-filter__color {
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
 }
 
 .products-filter__bluetooth {
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.products-filter__bluetooth-label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.bluetooth-title {
+  margin-bottom: 20px;
 }
 
 .catalog {
@@ -624,10 +643,34 @@ fieldset {
 
 .catalog__header {
   width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.catalog__title {
+  margin-right: 197px;
+}
+
+.catalog__wrapper {
+  margin-left: auto;
 }
 
 .catalog__body {
   width: 100%;
+  padding: 0 40px;
+}
+
+.catalog__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-selector {
+  display: flex;
+  flex-direction: wrap;
+  padding: 0;
 }
 
 .title, .products-slider__description {
@@ -864,11 +907,27 @@ fieldset {
   text-transform: uppercase;
 }
 
+.products-filter__main-title {
+  margin-bottom: 60px;
+}
+
 .products-filter__title {
   font-family: var(--fs-main);
   font-weight: var(--fw-bold);
   font-size: 18px;
   line-height: 20px;
+}
+
+.price-title {
+  margin-bottom: 55px;
+}
+
+.color-title {
+  margin-bottom: 20px;
+}
+
+.products-filter__label:not(:last-child) {
+  margin-bottom: 17px;
 }
 
 .products-filter__checkbox-text, .products-filter__radio-text {
@@ -932,11 +991,13 @@ fieldset {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 25px;
 }
 
 .page-selector__link {
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  padding: 10px 15px;
 }
 
