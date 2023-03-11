@@ -659,7 +659,29 @@ fieldset {
 
 .catalog__body {
   width: 100%;
-  padding: 0 40px;
+  padding: 70px 40px 78px 40px;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 44px 40px;
+  margin-bottom: 44px;
+}
+
+.catalog__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.catalog__product-name {
+ max-width: 226px;
 }
 
 .catalog__footer {
@@ -945,6 +967,7 @@ fieldset {
 
 .catalog__image {
   background-color: #f0f0f0;
+  margin-bottom: 32px;
 }
 
 .catalog__product-name {
@@ -975,6 +998,9 @@ fieldset {
   color: var(--color-main);
   cursor: pointer;
   text-transform: uppercase;
+  margin-bottom: 44px;
+  width: 100%;
+  padding: 18px 0;
 }
 
 .catalog__footer {
