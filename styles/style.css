@@ -146,6 +146,10 @@ fieldset {
   margin-bottom: 30px;
 }
 
+.page-header__logo:hover {
+  opacity: .6;
+}
+
 .page-header__logo:focus {
   outline: none;
   border: none;
@@ -153,6 +157,10 @@ fieldset {
 
 .page-header__logo:focus-visible {
   box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.page-header__logo:active {
+  opacity: .3;
 }
 
 .user-menu {
@@ -167,12 +175,44 @@ fieldset {
   color: var(--color-main);
 }
 
-.user-menu__item:nth-child(1) {
+.user-menu__item:nth-child(1) .user-menu__link {
   padding-left: 23px;
+  background-image: url('../img/icons/compare.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.user-menu__item:nth-child(2) .user-menu__link {
+  padding-left: 44px;
+  background-image: url('../img/icons/shopping-card.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.user-menu__link {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .user-menu__item:not(:first-child) {
-  margin-left: 62px;
+  margin-left: 18px;
+}
+
+.user-menu__link:hover {
+  opacity: .6;
+}
+
+.user-menu__link:focus {
+  border: none;
+  outline: none;
+}
+
+.user-menu__link:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.user-menu__link:active {
+  opacity: .3;
 }
 
 .site-login__list {
@@ -181,12 +221,41 @@ fieldset {
   flex-wrap: wrap;
 }
 
-.site-login__link:nth-child(1) {
+.site-login__item:nth-child(1) {
+  margin-right: 28px;
+}
+
+.site-login__item:nth-child(1) .site-login__link {
+  background-image: url('../img/icons/profile.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
   padding-left: 28px;
 }
 
-.logout {
+.site-login__link {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.site-login__item:nth-child(1):hover {
+  opacity: .6;
+}
+
+.site-login__link:focus {
+  border: none;
+  outline: none;
+}
+
+.site-login__link:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.site-login__item:nth-child(1):active {
   opacity: .3;
+}
+
+.logout {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form {
@@ -295,6 +364,23 @@ fieldset {
 
 .page-header__list .site-navigation__item {
   margin-left: 45px;
+}
+
+.page-header__list .site-navigation__link:hover {
+  opacity: .6;
+}
+
+.page-header__list .site-navigation__link:focus {
+  outline: none;
+  border: none;
+}
+
+.page-header__list .site-navigation__link:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;  
+}
+
+.page-header__list .site-navigation__link:active {
+  opacity: .3;
 }
 
 .main-content__container {
