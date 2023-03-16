@@ -43,9 +43,9 @@
               <h2 class="products-catalog__title title">Моноподы для селфи</h2>
               <nav class="products-catalog__navigation">
                 <ol class="products-catalog__list">
-                  <li class="products-catalog__item">Главная</li>
-                  <li class="products-catalog__item">Каталог товаров</li>
-                  <li class="products-catalog__item">Моноподы для селфи</li>
+                  <li class="products-catalog__item"><a class="products-catalog__link" href="index.html">Главная</a></li>
+                  <li class="products-catalog__item"><a class="products-catalog__link" href="catalog.html">Каталог товаров</a></li>
+                  <li class="products-catalog__item"><a class="products-catalog__link" href="catalog.html">Моноподы для селфи</a></li>
                 </ol>
               </nav>
             </div>
@@ -97,12 +97,32 @@
                   <option class="catalog__select-item" value="new">Новые</option>
                 </select>
                 <div class="catalog__wrapper">
-                  <a class="catalog__sorting-link" href="#">
+                  <button class="catalog__sorting-button" type="submit">
+                    <svg class="sort-icon" aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g  opacity="1" clip-path="url(#clip0_11478_2970)">
+                      <path d="M6 0L11.5 10H0.5" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_11478_2970">
+                      <rect width="11" height="10" fill="white" transform="translate(0.5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
                     <span class="visually-hidden">Сортировать по возрастанию</span>
-                  </a>
-                  <a class="catalog__sorting-link" href="#">
+                  </button>
+                  <button class="catalog__sorting-button sort-down" type="submit">
+                    <svg class="sort-icon" aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="1" clip-path="url(#clip0_11478_2970)">
+                      <path d="M6 0L11.5 10H0.5" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_11478_2970">
+                      <rect width="11" height="10" fill="white" transform="translate(0.5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
                     <span class="visually-hidden">Сортировать по убыванию</span>
-                  </a>
+                  </button>
                 </div>
               </header>
               <div class="catalog__body">
@@ -144,7 +164,7 @@
                 </ul>
                 <button class="catalog__button" type="button">Загрузить еще</button>
                 <div class="catalog__footer">
-                  <button class="catalog__pre-link" type="button">Назад</button>
+                  <button class="catalog__pre-button" type="button">Назад</button>
                   <ol class="page-selector">
                     <li class="page-selector__item"><a class="page-selector__link" href="#">1</a></li>
                     <li class="page-selector__item"><a class="page-selector__link" href="#">2</a></li>
@@ -152,7 +172,7 @@
                     <li class="page-selector__item"><a class="page-selector__link" href="#">...</a></li>
                     <li class="page-selector__item"><a class="page-selector__link" href="#">15</a></li>
                   </ol>
-                  <button  class="catalog__post-link" type="button">Вперёд</button>
+                  <button  class="catalog__post-button" type="button">Вперёд</button>
                 </div>
               </div>
             </div>
@@ -162,7 +182,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <img class="page-footer__logo" src="img/logo/footer-logo.svg" alt="Логотип интернет-магазина 'Device'" width="145" height="36">
+        <a href="index.html">
+          <img class="page-footer__logo" src="img/logo/footer-logo.svg" alt="Логотип интернет-магазина 'Device'" width="145" height="36">
+        </a>
         <div class="page-footer__body">
           <p class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <nav class="site-navigation page-footer__site-navigation">
