@@ -890,6 +890,21 @@ fieldset {
   width: 145px;
   margin-right: auto;
   margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.page-footer__logo:hover {
+  opacity: .6;
+}
+
+.page-footer__logo:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;
+  border: none;
+  outline: none;
+}
+
+.page-footer__logo:active {
+  opacity: .3;
 }
 
 .page-footer__body {
