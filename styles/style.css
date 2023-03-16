@@ -1578,7 +1578,7 @@ fieldset {
 }
 
 .page-selector__link:hover {
-  opacity: 1;
+  color: rgba(68, 68, 68, 1);
 }
 
 .page-selector__link:focus-visible {
