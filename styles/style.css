@@ -915,13 +915,51 @@ fieldset {
   margin-right: 35px;
 }
 
+.page-footer__list .site-navigation__link {
+  padding-bottom: 4px;
+}
+
+.page-footer__list .site-navigation__link:hover {
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
+}
+
+.page-footer__list .site-navigation__link:focus {
+  outline: none;
+}
+
+.page-footer__list .site-navigation__link:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.page-footer__list .site-navigation__link:active {
+  opacity: .3;
+
+}
+
 .page-footer__tel {
   margin-left: auto;
 }
 
+.page-footer__tel:hover {
+  color: #ffc700;
+}
+
+.page-footer__tel:focus {
+  outline: none;
+}
+
+.page-footer__tel:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.page-footer__tel:active {
+  opacity: .3;
+}
+
 .page-footer__footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 
@@ -942,9 +980,25 @@ fieldset {
   margin-right: 15px;
 }
 
-.page-footer__img {
-  width: 115px;
+.page-footer__link {
   margin-left: 390px;
+}
+
+.page-footer__link:hover .page-footer__icon {
+  fill: #fff;
+}
+
+.page-footer__link:focus {
+  border: none;
+  outline: none;
+}
+
+.page-footer__link:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.page-footer__link:active .page-footer__icon {
+  fill-opacity: .3;
 }
 
 .products-catalog {
@@ -1271,22 +1325,26 @@ fieldset {
   position: relative;
 }
 
-.social-links__item:nth-child(1) .social-links__link::before {
-  content: url('../img/social-icons/facebook.svg');
-  width: 40px;
-  height: 40px;
+.social-links__link {
+  display: block;
 }
 
-.social-links__item:nth-child(2) .social-links__link::before {
-  content: url('../img/social-icons/inst.svg');
-  width: 40px;
-  height: 40px;
+.social-links__link:hover .social-links__icon-circle {
+  fill: #ffc700;
+  fill-opacity: 1;
 }
 
-.social-links__item:nth-child(3) .social-links__link::before {
-  content: url('../img/social-icons/twit.svg');
-  width: 40px;
-  height: 40px;
+.social-links__link:focus {
+  outline: none;
+  border: none;
+}
+
+.social-links__link:focus-visible {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.social-links__link:active .social-links__icon-letter {
+  opacity: .3;
 }
 
 .main-content-catalog {
