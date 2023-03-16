@@ -1043,8 +1043,18 @@ fieldset {
   padding: 0;
 }
 
-.products-catalog__item {
-  margin-right: 36px;
+.products-catalog__item:not(:last-child) {
+  padding-right: 36px;
+  position: relative;
+}
+
+.products-catalog__item:not(:last-child)::after {
+  content: url('../img/icons/next-arrow.svg');
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  right: 16px;
+  top: -1px;
 }
 
 .products-catalog__body {
@@ -1370,12 +1380,27 @@ fieldset {
   background-color: #fff;
 }
 
-.products-catalog__item {
+.products-catalog__link {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-normal);
   font-size: 16px;
   line-height: 19px;
   color: var(--color-main);
+  text-decoration: none;
+}
+
+.products-catalog__link:hover {
+  opacity: .6;
+}
+
+.products-catalog__link:focus-visible {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.products-catalog__link:active {
+  opacity: .3;
 }
 
 .products-filter__main-title, .catalog__title {
