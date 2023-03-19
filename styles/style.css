@@ -240,6 +240,10 @@ fieldset {
 
 .site-login__item:nth-child(1) {
   margin-right: 28px;
+  max-width: 146px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .site-login__item:nth-child(1) .site-login__link {
