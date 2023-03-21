@@ -1856,6 +1856,28 @@ fieldset {
   color: var(--color-main);
 }
 
+.catalog__select {
+  background-color: transparent;
+  border: none;
+  padding: 5px 20px 5px 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.catalog__select:hover {
+  opacity: .6;
+}
+
+.catalog__select:focus-visible {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.catalog__select:active {
+  opacity: .3;
+}
+
 .catalog__price {
   font-family: var(--font-fam-main);
   font-weight: var(--fw-normal);
