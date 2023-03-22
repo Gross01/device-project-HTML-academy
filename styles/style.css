@@ -414,10 +414,6 @@ fieldset {
   display: block;
 }
 
-.site-navigation__product-catalog:focus + .popover-product-catalog {
-  display: block;
-}
-
 .popover-product-catalog {
   left: 0;
   top: 190px;
