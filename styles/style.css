@@ -1286,7 +1286,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   width: 320px;
-  padding:  25px 40px 0 60px;
+  padding:  25px 60px 0 60px;
 }
 
 .products-filter__color {
@@ -1354,6 +1354,7 @@ fieldset {
 
 .sort-down {
   transform: rotate(180deg);
+  padding-top: 3px;
 }
 
 .catalog__body {
@@ -1564,6 +1565,20 @@ fieldset {
   font-weight: inherit;
   color: #444444;
   text-decoration: underline;
+}
+
+.tel:hover {
+  opacity: .6;
+}
+
+.tel:focus-visible {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.tel:active {
+  opacity: .3;
 }
 
 .newsletter-subscribe {
