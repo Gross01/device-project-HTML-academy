@@ -29,6 +29,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
@@ -70,6 +75,7 @@ fieldset {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  min-width: 1160px;
   display: flex;
   flex-direction: column;
   font-family: 'Rubik', 'Arial' , sans-serif;
@@ -199,10 +205,6 @@ fieldset {
   padding-bottom: 8px;
 }
 
-.user-menu__item:not(:first-child) {
-  margin-left: 18px;
-}
-
 .user-menu__link:hover {
   opacity: .6;
 }
@@ -227,11 +229,14 @@ fieldset {
 }
 
 .site-login__item:nth-child(1) {
-  margin-right: 28px;
   max-width: 146px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.site-login__item:not(:last-child) {
+  margin-right: 18px;
 }
 
 .site-login__item:nth-child(1) .site-login__link {
@@ -352,6 +357,8 @@ fieldset {
   align-items: center;
   margin-left: auto;
   flex-wrap: wrap;
+  width: 242px;
+  justify-content: space-between;
 }
 
 .page-header__site-navigation {
@@ -527,8 +534,7 @@ fieldset {
 .popover-basket .popover__info {
   background-color: #1a1a1a;
   display: flex;
-  padding: 0 20px;
-  height: 44px;
+  padding: 12px 20px;
   align-items: center;
   width: 100%;
   justify-content: space-between;
@@ -913,7 +919,7 @@ fieldset {
 }
 
 .delivery-info__image-wrapper {
-  width: 125px;
+  min-width: 125px;
   height: 100px;
   background-color: #ffe17f;
   display: flex;
@@ -961,10 +967,11 @@ fieldset {
 .additional-info {
   display: flex;
   margin-bottom: 70px;
+  flex-wrap: wrap;
 }
 
 .site-info {
-  width: 520px;
+  max-width: 520px;
   margin-right: auto;
 }
 
@@ -1012,7 +1019,7 @@ fieldset {
 }
 
 .newsletter-subscribe__form {
-  width: 810px;
+  min-width: 810px;
   display: flex;
 }
 
@@ -1053,6 +1060,7 @@ fieldset {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   cursor: pointer;
+  width: 253px;
 }
 
 .newsletter-subscribe__btn:hover {
@@ -1307,6 +1315,7 @@ fieldset {
 
 .catalog__title {
   margin-right: 197px;
+  max-width: 155px;
 }
 
 .catalog__wrapper {
@@ -1377,7 +1386,7 @@ fieldset {
 
 .page-selector {
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -1415,8 +1424,9 @@ fieldset {
 }
 
 .main-goods__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
 }
 
 .main-goods__item {
@@ -1776,7 +1786,7 @@ fieldset {
 }
 
 .control__mark {
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   border: 2px solid black;
   border-radius: 3px;
@@ -1906,6 +1916,7 @@ fieldset {
   padding: 5px 20px 5px 0;
   font-size: 18px;
   line-height: 30px;
+  max-width: 160px;
 }
 
 .catalog__select:hover {
