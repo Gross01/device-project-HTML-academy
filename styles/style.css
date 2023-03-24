@@ -142,8 +142,7 @@ fieldset {
   width: 1160px;
   margin: 0 auto;
   padding: 0 61px;
-  padding-bottom: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   padding-top: 13px;
   display: flex;
   flex-direction: column;
@@ -177,7 +176,7 @@ fieldset {
 .user-menu {
   display: flex;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 39px;
 }
 
 .user-menu__link, .site-login__link {
@@ -286,7 +285,7 @@ fieldset {
   background-position: 16px center;
   border: 2px solid #000;
   border-radius: 50px 0px 0px 50px;
-  padding: 10px 0 10px 48px;
+  padding: 8px 0 8px 48px;
   margin: 0;
   color: #000;
   font-family: 'Rubik', 'Arial' , sans-serif;
@@ -652,7 +651,7 @@ fieldset {
   font-family: 'Rubik', 'Arial' , sans-serif;
   font-weight: 700;
   right: 49px;
-  top: 61px;
+  top: 70px;
   z-index: -1;
 }
 
@@ -683,7 +682,7 @@ fieldset {
 .products-slider {
   margin-top: -18px;
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 62px;
 }
 
 .products-slider__gallery {
@@ -700,13 +699,13 @@ fieldset {
 }
 
 .products-slider__pre-btn {
-  left: 30px;
-  bottom: 289px;
+  left: 25px;
+  bottom: 294px;
 }
 
 .products-slider__post-btn {
-  right: 0;
-  bottom: 289px;
+  right: -5px;
+  bottom: 296px;
   transform: rotate(180deg);
 }
 
@@ -748,7 +747,7 @@ fieldset {
 
 .products-slider__text {
   margin: 0;
-  margin-bottom: 51px;
+  margin-bottom: 46px;
 }
 
 .products-slider__link {
@@ -779,12 +778,13 @@ fieldset {
 .products-slider__info-text {
   margin: 0;
   margin-top: 15px;
+  font-size: 16px;
 }
 
 .products-slider__buttons-list {
   position: absolute;
   right: 0;
-  bottom: 169px;
+  bottom: 174px;
   display: flex;
 }
 
@@ -821,8 +821,8 @@ fieldset {
 .services__slider {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  margin-right: 123px;
+  width: 287px;
+  margin-right: 115px;
   border-right: 7px solid black;
 }
 
@@ -937,6 +937,7 @@ fieldset {
   color: #000;
   text-transform: uppercase;
   letter-spacing: .2em;
+  margin-left: -40px;
 }
 
 .delivery-info__icon {
@@ -997,8 +998,8 @@ fieldset {
 }
 
 .newsletter-subscribe__header {
-  padding-top: 64px;
-  margin-bottom: 144px;
+  padding-top: 61px;
+  margin-bottom: 138px;
   display: flex;
   align-items: flex-start;
 }
@@ -1141,7 +1142,7 @@ fieldset {
 }
 
 .page-footer__list .site-navigation__item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 32px;
 }
 
 .page-footer__list .site-navigation__link {
@@ -1168,6 +1169,8 @@ fieldset {
 
 .page-footer__tel {
   margin-left: auto;
+  align-self: center;
+  margin-bottom: 9px;
 }
 
 .page-footer__tel:hover {
@@ -1420,7 +1423,7 @@ fieldset {
 }
 
 .main-goods {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .main-goods__list {
