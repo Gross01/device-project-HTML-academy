@@ -25,20 +25,6 @@
         url('../fonts/rubik/rubik-700.woff') format('woff');
 }
 
-:root {
-  /* fonts */
-  --font-fam-main: 'Rubik', 'Arial' , sans-serif;
-  --font-fam-title: 'Raleway', 'Arial', sans-serif;
-  --fw-normal: 400;
-  --fw-bold: 700;
-  --fw-super-bold: 800;
-  --fs-main: 18px;
-  --lh-main: 30px;
-  --color-main: #000;
-  /* colors */
-  --background-main: #ffffff;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -86,13 +72,12 @@ fieldset {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
-  font-size: var(--fs-main);
-  line-height: var(--lh-main);
-  color: var(--color-main);
-
-  background-color: var(--background-main);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  background-color: #fff;
 }
 
 .link, .button  {
@@ -100,13 +85,13 @@ fieldset {
   z-index: 1;
   display: inline-block;
 
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
-  font-size: var(--fs-main);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
   line-height: 21px;
   text-align: cetner;
   text-transform: uppercase;
-  color: var(--color-main);
+  color: #000;
   border: none;
   background-color: transparent;
   letter-spacing: .2em;
@@ -192,7 +177,7 @@ fieldset {
 .user-menu__link, .site-login__link {
   font-family: inherit;
   font-weight: inherit;
-  color: var(--color-main);
+  color: #000;
 }
 
 .user-menu__item:nth-child(1) .user-menu__link {
@@ -294,13 +279,13 @@ fieldset {
   background-image: url('../img/icons/search.svg');
   background-repeat: no-repeat;
   background-position: 16px center;
-  border: 2px solid var(--color-main);
+  border: 2px solid #000;
   border-radius: 50px 0px 0px 50px;
   padding: 10px 0 10px 48px;
   margin: 0;
-  color: var(--color-main);
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  color: #000;
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
@@ -314,9 +299,9 @@ fieldset {
 }
 
 .search-form__input::placeholder {
-  color: var(--color-main);
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  color: #000;
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   opacity: .3;
@@ -330,12 +315,12 @@ fieldset {
   width: 158px;
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid var(--color-main);
+  border: 2px solid #000;
   border-left: none;
   border-radius: 0px 50px 50px 0px;
   margin: 0;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
@@ -560,7 +545,7 @@ fieldset {
   padding: 15px 25px;
   background-color: #fff;
   color: #000;
-  font-weight: var(--fw-super-bold);
+  font-weight: 800;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: .2em;
@@ -594,8 +579,8 @@ fieldset {
 
 .popover__link {
   color: #000;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
@@ -658,8 +643,8 @@ fieldset {
   color: #fff;
   position: absolute;
   font-size: 180px;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-bold);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 700;
   right: 49px;
   top: 61px;
   z-index: -1;
@@ -670,8 +655,8 @@ fieldset {
   color: #fff;
   position: absolute;
   font-size: 180px;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-bold);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 700;
   right: 49px;
   top: 61px;
   z-index: -1;
@@ -682,8 +667,8 @@ fieldset {
   color: #fff;
   position: absolute;
   font-size: 180px;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-bold);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 700;
   right: 49px;
   top: 61px;
   z-index: -1;
@@ -939,11 +924,11 @@ fieldset {
 .delivery-info__text {
   flex-grow: 1;
   text-align: center;
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   font-size: 20px;
   line-height: 24px;
-  color: var(--color-main);
+  color: #000;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
@@ -1037,16 +1022,16 @@ fieldset {
   border-bottom: 3px solid #c4c4c4;
   padding: 11px 0 11px 16px;
   flex-grow: 1;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }
 
 .newsletter-subscribe__input::placeholder {
   color: #444444;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   opacity: 0.5;
@@ -1063,8 +1048,8 @@ fieldset {
   font-size: 18px;
   line-height: 21px;
   padding: 18px 39px;
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   cursor: pointer;
@@ -1397,11 +1382,11 @@ fieldset {
 }
 
 .title, .products-slider__description {
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  color: var(--color-main);
+  color: #000;
 }
 
 .text {
@@ -1412,11 +1397,11 @@ fieldset {
 }
 
 .site-navigation__product-catalog, .site-navigation__list .site-navigation__link {
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  color: var(--color-main);
+  color: #000;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
@@ -1439,16 +1424,16 @@ fieldset {
 }
 
 .products-slider__info-title {
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 30px;
-  color: var(--color-main);
+  color: #000;
 }
 
 .product-slider__button {
   padding: 0;
-  border: 2px solid var(--color-main);
+  border: 2px solid #000;
   background-color: #fff;
   width: 12px;
   height: 12px;
@@ -1457,7 +1442,7 @@ fieldset {
 }
 
 .product-slider__button--active {
-  background-color: var(--color-main);
+  background-color: #000;
 }
 
 .product-slider__button:hover,
@@ -1510,11 +1495,11 @@ fieldset {
 }
 
 .main-goods__title {
-  font-family: var(--font-fam-title);
+  font-family:  'Raleway', 'Arial', sans-serif;
   font-weight: 800;
   font-size: inherit;
   line-height: 24px;
-  color: var(--color-main);
+  color: #000;
 }
 
 .site-info__list {
@@ -1523,11 +1508,11 @@ fieldset {
 }
 
 .site-info__item {
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-bold);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: var(--color-main);
+  color: #000;
   padding-left: 38px;
   position: relative;
 }
@@ -1550,8 +1535,8 @@ fieldset {
 
 .contacts__name {
   display: block;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-bold);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #444444;
@@ -1645,11 +1630,11 @@ fieldset {
 }
 
 .products-catalog__link {
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: var(--color-main);
+  color: #000;
   text-decoration: none;
 }
 
@@ -1668,11 +1653,11 @@ fieldset {
 }
 
 .products-filter__main-title, .catalog__title {
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  color: var(--color-main);
+  color: #000;
   letter-spacing: .2em;
   text-transform: uppercase;
 }
@@ -1682,8 +1667,8 @@ fieldset {
 }
 
 .products-filter__title {
-  font-family: var(--fs-main);
-  font-weight: var(--fw-bold);
+  font-family: 18px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   width: 100%;
@@ -1841,11 +1826,11 @@ fieldset {
 }
 
 .products-filter__checkbox-text, .products-filter__radio-text {
-  font-family: var(--fs-main);
-  font-weight: var(--fw-normal);
+  font-family: 18px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: var(--color-main);
+  color: #000;
 }
 
 .products-filter__button {
@@ -1908,11 +1893,11 @@ fieldset {
 }
 
 .catalog__product-name {
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-bold);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: var(--color-main);
+  color: #000;
 }
 
 .catalog__select {
@@ -1938,8 +1923,8 @@ fieldset {
 }
 
 .catalog__price {
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #444444;
@@ -1949,12 +1934,12 @@ fieldset {
   border: 3px solid #e5e5e5;
   text-align: center;
   background-color: #fff;
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: .2em;
-  color: var(--color-main);
+  color: #000;
   cursor: pointer;
   text-transform: uppercase;
   margin-bottom: 44px;
@@ -1983,12 +1968,12 @@ fieldset {
 
 .catalog__pre-button, .catalog__post-button {
   font-size: 18px;
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   line-height: 21px;
   letter-spacing: .2em;
   text-transform: uppercase;
-  color: var(--color-main);
+  color: #000;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -2090,8 +2075,8 @@ fieldset {
 
 .modal__title {
   color: #000;
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-super-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 42px;
@@ -2130,8 +2115,8 @@ fieldset {
 .modal__label-title {
   margin-bottom: 14px;
   color: #000;
-  font-family: var(--font-fam-title);
-  font-weight: var(--fw-bold);
+  font-family:  'Raleway', 'Arial', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -2145,8 +2130,8 @@ fieldset {
   border: none;
   background-color: #F0F0F0;
   color: #000;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2182,8 +2167,8 @@ fieldset {
 }
 
 .modal__span {
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #000;
@@ -2315,8 +2300,8 @@ fieldset {
 
 .popover-info .popover__text {
   margin: 0;
-  font-family: var(--font-fam-main);
-  font-weight: var(--fw-normal);
+  font-family: 'Rubik', 'Arial' , sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
