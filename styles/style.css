@@ -353,6 +353,7 @@ fieldset {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
 }
 
 .search-form__button:hover {
@@ -764,7 +765,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 75px;
+  margin-top: 71px;
 }
 
 .products-slider__description {
@@ -1093,6 +1094,7 @@ fieldset {
   letter-spacing: 0.2em;
   cursor: pointer;
   width: 253px;
+  color: #000000;
 }
 
 .newsletter-subscribe__btn:hover {

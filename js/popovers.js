@@ -16,10 +16,9 @@ basket.addEventListener('click', function () {
 })
 
 deliveryInfo.addEventListener('click', function () {
-  modal.classList.remove('modal--close')
+  modal.classList.remove('modal--close');
 })
 
 modalCloseButton.addEventListener('click', function () {
   modal.classList.add('modal--close')
 })
-
