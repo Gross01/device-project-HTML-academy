@@ -148,7 +148,7 @@ a {
   flex-grow: 1;
 }
 
-.page-header__container {
+.page-header {
   z-index: 1;
   position: relative;
   width: 1160px;
@@ -395,6 +395,8 @@ a {
   display: flex;
   align-items: center;
   margin-top: -15px;
+  background: transparent;
+  border: none;
 }
 
 .site-navigation__product-catalog::after {
@@ -993,6 +995,22 @@ a {
   flex-wrap: wrap;
 }
 
+.site-info,
+.contacts {
+  position: relative;
+}
+
+.site-info::before,
+.contacts::before {
+  content: '';
+  background-color: #000000;
+  width: 84px;
+  height: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .site-info {
   max-width: 520px;
   margin-right: auto;
@@ -1123,6 +1141,17 @@ a {
   display: flex;
   flex-direction: column;
   padding: 62px 0;
+  position: relative;
+}
+
+.page-footer__container::before {
+  content: '';
+  width: 80px;
+  height: 7px;
+  background-color: #ffc700;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
 }
 
 .page-footer__logo {
@@ -1721,7 +1750,7 @@ a {
 }
 
 .products-filter__title {
-  font-family: 18px;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1859,6 +1888,16 @@ a {
   border-radius: 50%;
 }
 
+.products-filter__checkbox:disabled + .control__mark,
+.products-filter__radio:disabled + .control__mark-range {
+  opacity: 0.1;
+}
+
+.products-filter__checkbox:disabled ~ .products-filter__checkbox-text,
+.products-filter__radio:disabled ~  .products-filter__radio-text{
+  opacity: 0.1;
+}
+
 .control:hover {
   opacity: 0.6;
 }
@@ -1881,7 +1920,7 @@ a {
 
 .products-filter__checkbox-text,
 .products-filter__radio-text {
-  font-family: 18px;
+  font-family: "Rubik", "Arial", sans-serif ;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -2214,13 +2253,14 @@ a {
 
 .modal__input:not(.quantity-input) {
   padding: 20px;
+  padding-right: 45px;
 }
 
 .modal__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.modal__span {
+.modal__input-span {
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2233,7 +2273,6 @@ a {
 }
 
 .error-span {
-  display: none;
   color: #ff3d3d;
   box-shadow: none;
   font-size: 14px;
@@ -2281,6 +2320,7 @@ a {
 
 .modal__quantity-input {
   display: flex;
+  background-color: #f0f0f0;
 }
 
 .quantity-input {
@@ -2288,6 +2328,7 @@ a {
   height: 60px;
   text-align: center;
   appearance: textfield;
+  margin-right: 2px;
 }
 
 .quantity-input::-webkit-outer-spin-button,
@@ -2325,6 +2366,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
+  margin-right: 2px;
 }
 
 .modal__plus-btn {

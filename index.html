@@ -9,65 +9,63 @@
   <body class="page__body">
     <h1 class="visually-hidden">Магазин электроники "Device"</h1>
     <header class="page-header">
-      <div class="page-header__container">
-        <a class="page-header__link" href="#" >
-          <img class="page-header__logo" src="img/logo/header-logo.svg" alt='логотип интернет магазина "Device"' width="145" height="36">
-        </a>
-        <div class="user-menu">
-          <form class="search-form" action="#" method="get">
-            <input class="search-form__input" type="text" name="search" placeholder="Текст поиска" required>
-            <button class="search-form__button" type="submit">Найти</button>
-          </form>
-          <ul class="site-login__list">
-            <li class="site-login__item"><a class="site-login__link" href="#">Войти</a></li>
-          </ul>
-          <ul class="user-menu__list user-menu__list--main">
-            <li class="user-menu__item"><a class="user-menu__link " href="#">Сравнить</a></li>
-            <li class="user-menu__item"><a class="user-menu__link " href="#">Корзина</a></li>
+      <a class="page-header__link" href="#" >
+        <img class="page-header__logo" src="img/logo/header-logo.svg" alt='логотип интернет магазина "Device"' width="145" height="36">
+      </a>
+      <div class="user-menu">
+        <form class="search-form" action="#" method="get">
+          <input class="search-form__input" type="text" name="search" placeholder="Текст поиска" required>
+          <button class="search-form__button" type="submit">Найти</button>
+        </form>
+        <ul class="site-login__list">
+          <li class="site-login__item"><a class="site-login__link" href="#">Войти</a></li>
+        </ul>
+        <ul class="user-menu__list user-menu__list--main">
+          <li class="user-menu__item"><a class="user-menu__link " href="#">Сравнить</a></li>
+          <li class="user-menu__item"><a class="user-menu__link " href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <nav class="site-navigation page-header__site-navigation">
+        <button class="site-navigation__product-catalog" type="button">Каталог товаров</button>
+        <div class="popover popover-product-catalog">
+          <ul class="popover__list">
+            <li class="popover__item"><a class="popover__link" href="#">Виртуальная реальность</a></li>
+            <li class="popover__item"><a class="popover__link" href="#">Фитнес-браслеты</a></li>
+            <li class="popover__item"><a class="popover__link" href="#">Квадрокоптеры</a></li>
+            <li class="popover__item"><a class="popover__link" href="catalog.html">Моноподы для cелфи</a></li>
+            <li class="popover__item"><a class="popover__link" href="#">Умные часы</a></li>
+            <li class="popover__item"><a class="popover__link" href="#">Экшн-камеры</a></li>
           </ul>
         </div>
-        <nav class="site-navigation page-header__site-navigation">
-          <a class="site-navigation__product-catalog" href="#">Каталог товаров</a>
-          <div class="popover popover-product-catalog">
-            <ul class="popover__list">
-              <li class="popover__item"><a class="popover__link" href="#">Виртуальная реальность</a></li>
-              <li class="popover__item"><a class="popover__link" href="#">Фитнес-браслеты</a></li>
-              <li class="popover__item"><a class="popover__link" href="#">Квадрокоптеры</a></li>
-              <li class="popover__item"><a class="popover__link" href="catalog.html">Моноподы для cелфи</a></li>
-              <li class="popover__item"><a class="popover__link" href="#">Умные часы</a></li>
-              <li class="popover__item"><a class="popover__link" href="#">Экшн-камеры</a></li>
-            </ul>
-          </div>
-          <ul class="site-navigation__list page-header__list">
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+        <ul class="site-navigation__list page-header__list">
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+        </ul>
+        <div class="popover popover-basket">
+          <ul class="popover__list">
+            <li class="popover__item">
+              <a class="popover__link" href="#">
+                <img class="popover__image" src="img/products/product-1.png" alt="Любительская селфи-палка" width="39" height="43">
+                <p class="popover__product-name">Любительская селфи-палка</p>
+              </a>
+              <button class="popover__close-button" type="button"></button>
+            </li>
+            <li class="popover__item">
+              <a class="popover__link" href="#">
+                <img class="popover__image" src="img/products/product-2.png" alt="Профессиональная селфи-палка" width="39" height="43">
+                <p class="popover__product-name">Профессиональная селфи-палка</p>
+              </a>
+              <button class="popover__close-button" type="button"></button>
+            </li>
           </ul>
-          <div class="popover popover-basket">
-            <ul class="popover__list">
-              <li class="popover__item">
-                <a class="popover__link" href="#">
-                  <img class="popover__image" src="img/products/product-1.png" alt="Любительская селфи-палка" width="39" height="43">
-                  <p class="popover__product-name">Любительская селфи-палка</p>
-                </a>
-                <button class="popover__close-button" type="button"></button>
-              </li>
-              <li class="popover__item">
-                <a class="popover__link" href="#">
-                  <img class="popover__image" src="img/products/product-2.png" alt="Профессиональная селфи-палка" width="39" height="43">
-                  <p class="popover__product-name">Профессиональная селфи-палка</p>
-                </a>
-                <button class="popover__close-button" type="button"></button>
-              </li>
-            </ul>
-            <div class="popover__info">
-              <span class="popover__products-quantity">Товаров: 2</span>
-              <span class="popover__sum">Сумма: 2000 ₽</span>
-            </div>
-            <a class="popover__button" href="#">Открыть корзину</a>
+          <div class="popover__info">
+            <span class="popover__products-quantity">Товаров: 2</span>
+            <span class="popover__sum">Сумма: 2000 ₽</span>
           </div>
-        </nav>
-      </div>
+          <a class="popover__button" href="#">Открыть корзину</a>
+        </div>
+      </nav>
     </header>
     <main class="main-content">
       <div class="main-content__container main-content__container-index">
@@ -392,12 +390,12 @@
             <label class="modal__label">
               <span class="modal__label-title">Ваше имя:</span>
               <input class="modal__input name-input" type="text" name="user-name" placeholder="Введите имя" required>
-              <span class="modal__span">Добавьте имя</span>
+              <span class="modal__input-span">Добавьте имя</span>
             </label>
             <label class="modal__label">
               <span class="modal__label-title">Ваш e-mail:</span>
-              <input class="modal__input error email-input" type="email" name="email" value="Почта" placeholder="Введите email" required>
-              <span class="error-span error">Забавный у вас адрес</span>
+              <input class="modal__input email-input" type="email" name="email" placeholder="Введите email" required>
+              <span class="modal__input-span">Забавный у вас адрес</span>
             </label>
           </div>
           <div class="modal__lower-inputs">
